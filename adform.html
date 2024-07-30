@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyway Collection Launch</title>
+    <style>
+@font-face {
+    font-family:heading;
+    src: url(./Helvetica\ LT\ 43\ Light\ Extended.ttf);
+}
+@font-face {
+    font-family:paragraph;
+    src: url(./Helvetica\ LT\ 63\ Medium\ Extended.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image:url(./GH_BG\ 1.jpg);
+            overflow-x: hidden;
+        }
+        .container {
+            text-align: center;
+            background-image: url('./GH_BG\ 2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color:#000;
+            padding:150px 0px;
+            margin:0px 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            width:40%;
+            margin-bottom:80px;
+        }
+        .container p {
+            color: white;
+            margin-bottom: 80px;
+            font-size:20px;
+            text-transform: uppercase;
+            line-height:20px;
+            font-family:heading;
+            transform: translate(-0%, -50%) scale(1.8, 1.3);
+   text-transform: uppercase;
+   letter-spacing: -15px;
+
+
+        }
+        .container input[type="text"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            width: 25vw;
+            background-color:transparent;
+            text-align: center;
+            border-bottom:1px solid #8f8b8a;
+           font-size:15px;
+           font-weight:700;
+           margin-bottom:0px;
+           text-transform: uppercase;
+           font-family: heading;
+           transform: translate(-0%, -50%) scale(1.8, 1.3);
+   text-transform: uppercase;
+   letter-spacing: -15px;
+        }
+        .container input[type="submit"] {
+            padding: 10px 30px;
+            border: none;
+            background-color:#d21019;
+            color: white;
+            cursor: pointer;
+            font-size:12px;
+            text-transform: uppercase;
+            margin-bottom:50px;
+            font-family:heading;
+            margin-top:30px;
+            transform: translate(-0%, -50%) scale(1.8, 1.3);
+   text-transform: uppercase;
+   letter-spacing: -15px;
+        }
+        .container input[type="submit"]:hover {
+            background-color: darkred;
+        }
+        @media(max-width:1024px){
+         .container h6{
+            font-size: 15px !important;
+         }   
+         .container p{
+            font-size:17px;
+         }
+        }
+      
+
+        @media(max-width:899px){
+            .container p {
+        color: white;
+        margin-bottom: 30px;
+        font-size: 9px;
+        text-transform: uppercase;
+        line-height: 10px;
+    }
+.container {
+    padding: 57px 0px;
+    margin: 0px 31px;
+}
+
+.container input[type="submit"] {
+        padding: 10px 21px;
+        font-size: 6px;
+    }
+
+.container input[type="text"]{
+font-size:6px;    
+} 
+.container h6 {
+    font-size: 7px!important;
+}
+        }
+
+  .container h6{
+    color: white;
+            font-size:18px;
+            text-transform: uppercase;
+            font-family:heading;
+            font-weight: 100;
+            transform: translate(-0%, -50%) scale(1.8, 1.3);
+   text-transform: uppercase;
+   letter-spacing: -15px;
+   margin: 0px;
+        }   
+        
+        .main-div {
+    display: flex;
+}
+
+.main-div .animet-text {
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.animet-text li {
+    list-style: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+    font-family:heading;
+    
+}
+
+@keyframes slide {
+    100% {
+        top: -160px;
+    }
+}
+
+.animet-text li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 30px;
+    font-family: heading;
+    text-transform: uppercase;
+}
+
+.animet-text li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background:#000;
+    border-left: 3px solid #000000;
+    animation: typing 3s steps(10)  infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 0px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+      
+
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <img src="./Every Way Collection.png" alt="">
+        <p>Sign up for <br>exclusive launch notification</p>
+        <form action="#" method="post">
+            <input type="text" name="email_phone" placeholder="Email/Phone Number">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <h6>Launching on 09th August 10PM IST</h6>
+        <div class="main-div">
+            <ul class="animet-text">
+                <li><span>T-shirt</span></li>
+                <li><span>Shorts</span></li>
+                <li><span>Straight Pants</span></li>
+                <li><span>Joggers</span></li>
+                <li><span>Athleisure</span></li>
+                <li><span>Body Suit</span></li>
+                <li><span>Cargo Pants</span></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>
